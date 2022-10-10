@@ -57,6 +57,7 @@ body {
 .singleplayer img {
 
     width: 100%;
+    height: 100%;
 }
 
 .middlepart {
@@ -83,6 +84,7 @@ body {
     margin-bottom: 30px;
     border-radius: 10px;
     font-weight: 600;
+
 
 }
 
@@ -123,6 +125,20 @@ body {
     border-radius: 5px;
     background-color: white;
 
+
+}
+
+
+.hidebutton {
+
+    width: 100px;
+    height: 32px;
+    font-weight: 700;
+    border: 0px;
+    border-radius: 5px;
+    background-color: red;
+    color: white;
+    visibility: hidden;
 
 }
 
@@ -179,4 +195,137 @@ footer {
 
     text-decoration: none;
     color: white;
+}
+
+hr {
+
+    border-top: 1px solid white;
+    border-bottom: 0px;
+}
+
+@media only screen and (max-width:576px) {
+
+    .topplayersection {
+
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+
+
+    }
+
+
+    .introduction {
+
+        color: white;
+        width: 80%;
+        margin-left: 30px;
+        margin-right: 10px;
+
+
+    }
+
+
+    .singleplayer {
+
+        width: 80%;
+
+        margin-left: 30px;
+        margin-right: 10px;
+
+    }
+
+    .middlepart {
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .players {
+
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        text-align: left;
+    }
+
+    footer {
+
+        padding: 10px;
+    }
+
+    .Lowerfooter {
+
+        margin-top: 20px;
+    }
+
+
+    .Lowerfooter {
+
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+
+@media screen and (min-width: 577px) and (max-width: 920px) {
+
+
+    .middlepart {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .upcomingmatch {
+        display: flex;
+
+    }
+
+    .players {
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        text-align: left;
+    }
+
+
+    .upcomingmatch {
+
+        height: 50px;
+        padding: 0px;
+        margin-bottom: 30px;
+        background-color: white;
+
+
+
+
+    }
+
+    .upcomingmatch button {
+        border-radius: 10px;
+        border: 1px solid #E8E8E8;
+    }
+
+
+    .upcomingmatch button {
+
+        padding: 20px 50px;
+        width: 200px;
+        height: 64px;
+        margin: 5px;
+        border-radius: 10px;
+        font-weight: 600;
+
+
+    }
+
+    .hidebutton {
+
+        visibility: visible;
+
+    }
+
+
+
+
 }
